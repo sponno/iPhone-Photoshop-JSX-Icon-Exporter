@@ -1,3 +1,5 @@
+
+
 PHOTOSHOP - LAYER EXPORT TOOL FOR NORMAL IPHONE GRAPHICS AND RETINA DISPLAY GRAPHICS.  
 
 This script assumes you are working with high resolution graphics for the iPhone Retina display eg 960 x 640
@@ -6,6 +8,9 @@ Select the layer you want to export in the layers list in Photoshop.
 2. The script will ask you for the name that you want to save this layer as (without file extension, eg background)
 3. The layer is trimmed of any transparent pixels, saved as name@2x.png and name.png in the same folder as oringal PSD document.          
 
+PHOTHOSHOP EXPORT ALL VISIBLE LAYERS - ExportAllVisibleAsPNGAnd2x.jsx
+This file will export the current document as @2x.png file for retina displays and 1x for normal displays. It will include all visible layers but will be transparent where required.
+If you only want to export the active layer as a trimmed PNG file. Use the ExportActiveLayerAsPNG.jsx file.
 
 PHOTOSHOP - IPHONE APP ICON EXPORT FOR IPHONE 4/3 TOUCH AND IPAD.  
 
