@@ -66,7 +66,9 @@ function doResizeAndOutput()
 	 	activeDocument.resizeImage(null,72,72,ResampleMethod.BICUBIC);  
 		activeDocument.saveAs(File(path + "/Icon-72.png"), pngOptions, true);
 
-	 	activeDocument.resizeImage(null,58,58,ResampleMethod.BICUBIC);  
+		// Updated for Xcode 4, this has changed from the spec, but is required for validation
+		
+	 	activeDocument.resizeImage(null,57,57,ResampleMethod.BICUBIC);  
 		activeDocument.saveAs(File(path + "/Icon-Small@2x.png"), pngOptions, true);
 
 	 	activeDocument.resizeImage(null,57,57,ResampleMethod.BICUBIC);  
