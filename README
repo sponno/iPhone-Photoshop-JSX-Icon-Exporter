@@ -13,7 +13,6 @@ This file will export the current document as @2x.png file for retina displays a
 If you only want to export the active layer as a trimmed PNG file. Use the ExportActiveLayerAsPNG.jsx file.
 
 PHOTOSHOP - IPHONE APP ICON EXPORT FOR IPHONE 4/3 TOUCH AND IPAD.  
-
 Creates all 6 icons sizes that are required for these devices from homescreen, retina display, spotlight search       
 
 1. To use this script, double click the script file, photoshop will launch and ask you for a 512x512 icon file of any image format (jpeg, psd, gif, png etc.)
@@ -22,6 +21,12 @@ Creates all 6 icons sizes that are required for these devices from homescreen, r
 3. Add these images into your iPhone project and update you app plist.
 Read Apples Q&Q 1686 on how to add this icons to your info plist
 http://developer.apple.com/iphone/library/qa/qa2010/qa1686.html
+
+PHOTOSHOP - IPHONE APP ICON EXPORT FOR MAC ICONS 
+Quickly creates 512, 256, 128, 32, 16 px icons which can then be used with Icon Composer (found in /Developer/Applications/Utilities/Icon Composer.app)
+Or just spotlight "icon composer" where you can create new ".icns" files.
+
+
 
 Hope you like this script, hit John Ballinger up on Twitter @sponno on from his website www.bluespark.co.nz
 

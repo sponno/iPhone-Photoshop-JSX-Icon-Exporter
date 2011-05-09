@@ -30,7 +30,7 @@ app.preferences.typeUnits = TypeUnits.PIXELS;
 function doResizeAndOutput()
 {            
 	var orginalDoc = app.activeDocument;
-         
+    orginalDoc.changeMode(ChangeMode.RGB);    
 	// Get the new file name.
     var fileName = prompt("File Name, No extension, eg background", ""); 
 	if(fileName==null) return; // You clicked cancel.
@@ -40,7 +40,9 @@ function doResizeAndOutput()
 	pngOptions.interlaced = false;
     
  	// Full Size - iPhone Retina Display Size and File Name.        
-	activeDocument.saveAs(File(orginalDoc.path + "/" + fileName + "@2x.png"), pngOptions, true);
+	activeDocument.saveAs(File(orginalDoc.path + "/" + fileName + "@2x.png"), pngOptions, true);        
+
+	
 
    	// Half Size wich is actually normal size.
  	activeDocument.resizeImage(null,(app.activeDocument.height/2),(app.activeDocument.width/2),ResampleMethod.BICUBIC);

@@ -1,7 +1,7 @@
 
 /***********************************************************************
 
-Photoshop - Layer Export tool for normal iPhone Graphics and retina display graphics.  
+PHOTOSHOP - LAYER EXPORT TOOL FOR NORMAL IPHONE GRAPHICS AND RETINA DISPLAY GRAPHICS.  
 
 This script assumes you are working with high resolution graphics for the iPhone Retina display eg 960 x 640
 Select the layer you want to export in the layers list in Photoshop.
@@ -68,8 +68,10 @@ function doResizeAndOutput()
 // Turns all layers off.
 function setInvisibleAllArtLayers(obj) {
     for( var i = 0; i < obj.artLayers.length; i++) {
-        obj.artLayers[i].allLocked = false;
-        obj.artLayers[i].visible = false;
+       
+		obj.artLayers[i].allLocked = false;
+       	obj.artLayers[i].visible = false;  
+
     }
     for( var i = 0; i < obj.layerSets.length; i++) {
         setInvisibleAllArtLayers(obj.layerSets[i]);
