@@ -62,20 +62,34 @@ function doResizeAndOutput()
 		// 114
 		activeDocument.resizeImage(null,114,114,ResampleMethod.BICUBIC);  
 	   	activeDocument.saveAs(File(path + "/Icon@2x.png"), pngOptions, true);                     
-        
+
+        // Undo Resize so we are working with crisp resizing.
+		app.activeDocument.activeHistoryState = app.activeDocument.historyStates[app.activeDocument.historyStates.length - 2];  	
+
 	 	activeDocument.resizeImage(null,72,72,ResampleMethod.BICUBIC);  
 		activeDocument.saveAs(File(path + "/Icon-72.png"), pngOptions, true);
 
-		// Updated for Xcode 4, this has changed from the spec, but is required for validation
-		
+        // Undo Resize so we are working with crisp resizing.
+		app.activeDocument.activeHistoryState = app.activeDocument.historyStates[app.activeDocument.historyStates.length - 2];  	
+
+		// Updated for Xcode 4, this has changed from the spec, but is required for validation		
 	 	activeDocument.resizeImage(null,57,57,ResampleMethod.BICUBIC);  
 		activeDocument.saveAs(File(path + "/Icon-Small@2x.png"), pngOptions, true);
+
+        // Undo Resize so we are working with crisp resizing.
+		app.activeDocument.activeHistoryState = app.activeDocument.historyStates[app.activeDocument.historyStates.length - 2];  	
 
 	 	activeDocument.resizeImage(null,57,57,ResampleMethod.BICUBIC);  
 		activeDocument.saveAs(File(path + "/Icon.png"), pngOptions, true);
 
+        // Undo Resize so we are working with crisp resizing.
+		app.activeDocument.activeHistoryState = app.activeDocument.historyStates[app.activeDocument.historyStates.length - 2];  	
+
 	 	activeDocument.resizeImage(null,50,50,ResampleMethod.BICUBIC);  
 		activeDocument.saveAs(File(path + "/Icon-Small-50.png"), pngOptions, true);
+
+        // Undo Resize so we are working with crisp resizing.
+		app.activeDocument.activeHistoryState = app.activeDocument.historyStates[app.activeDocument.historyStates.length - 2];  	
 
 	 	activeDocument.resizeImage(null,29,29,ResampleMethod.BICUBIC);  
 		activeDocument.saveAs(File(path + "/Icon-Small.png"), pngOptions, true);
