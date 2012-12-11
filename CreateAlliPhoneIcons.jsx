@@ -72,8 +72,8 @@ function doResizeAndOutput()
         // Undo Resize so we are working with crisp resizing.
 		app.activeDocument.activeHistoryState = app.activeDocument.historyStates[app.activeDocument.historyStates.length - 2];  	
 
-		// Updated for Xcode 4, this has changed from the spec, but is required for validation		
-	 	activeDocument.resizeImage(null,57,57,ResampleMethod.BICUBIC);  
+		// Updated for Xcode 4, this has changed from the spec, but is required for validation - iphone5
+	 	activeDocument.resizeImage(null,58,58,ResampleMethod.BICUBIC);  
 		activeDocument.saveAs(File(path + "/Icon-Small@2x.png"), pngOptions, true);
 
         // Undo Resize so we are working with crisp resizing.
